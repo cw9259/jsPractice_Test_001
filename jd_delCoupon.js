@@ -4,7 +4,7 @@
 更新时间：2021-01-21
 说明：1、删除优惠券名称中不含“京东”、“超市”、“自营”、“生鲜”关键字的券；2、删除优惠券名称中含“XX旗舰店”的券；3、已删除的券可以在回收站中还原
  */
-const $ = new Env('删除优惠券(不含京东&超市&自营&生鲜关键字)');
+const $ = new Env('删除不含京东&超市&自营&生鲜关键字优惠券');
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
